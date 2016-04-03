@@ -86,15 +86,15 @@ shuffle = function () {
         allCards.splice(i,1);
     }
     if (firstShuffle) {
-        $('#Playfield').empty();
-        $('#Playfield').append(tCards);
+        $('#Playcard').empty();
+        $('#Playcard').append(tCards);
         $('.card').click(cardClick);
         firstShuffle = false;
     } else {
         freeze = true;
         setTimeout(function () {
-            $('#Playfield').empty();
-            $('#Playfield').append(tCards);
+            $('#Playcard').empty();
+            $('#Playcard').append(tCards);
             $('.card').click(cardClick);
             freeze = false;
         }, 700);
