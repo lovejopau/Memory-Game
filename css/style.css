@@ -1,0 +1,124 @@
+body {
+    background-image: url(http://www.quality3dmodels.net/textures/texture_demo/519608885-grungebackgrounds12.jpg);
+}
+
+h1 {
+    /* Using the custom font we've included in the HTMl tab */
+    text-align: center;
+    font-family: Satisfy, cursive;
+    font-weight: normal;
+    font-size: 60px;
+    padding-top: 80px;
+    margin: 20px;
+}
+
+#Playfield {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+
+    perspective-origin: 50% 50%;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    -o-perspective: 500px;
+    -ms-perspective: 500px;
+}
+
+#PlayScore {
+    width: 700px;
+    margin: 0 auto;
+    display: relative;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.card {
+    background-color: #8B4513;
+    border: 1px solid orange;
+    border-radius: 0px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+
+    transition: transform 500ms ease, background-color 500ms ease, border-radius 500ms ease;
+    -webkit-transition: -webkit-transform 500ms ease, background-color 500ms ease, border-radius 500ms ease;
+    -moz-transition: -moz-transform 500ms ease, background-color 500ms ease, border-radius 500ms ease;
+    -o-transition: -o-transform 500ms ease, background-color 500ms ease, border-radius 500ms ease;
+    -ms-transition: -ms-transform 500ms ease, background-color 500ms ease, border-radius 500ms ease;
+}
+
+.card.one {
+    border-radius: 0px;
+}
+
+.card.two {
+    border-radius: 10px;
+}
+
+.card.three {
+    border-radius: 30px;
+}
+
+.card.four {
+    border-top-left-radius: 60px;
+}
+
+.card.five {
+    border-top-right-radius: 60px;
+}
+
+.card.six {
+    border-bottom-right-radius: 60px;
+}
+
+.card.seven {
+    border-bottom-left-radius: 60px;
+}
+
+.card.eight {
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.card.nine {
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+.card.ten {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.card.eleven {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.card.twelve {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.card.down {
+    background-color: #FF8C00;
+    border-radius: 0px;
+    margin: center;
+
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+.card.matched {
+    background-color: #D2691E;
+}
+li.active {
+    background-color: #CD853F;
+
+}
